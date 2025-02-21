@@ -1,0 +1,23 @@
+{
+  "name": "algorithms",
+  "scripts": {
+    "commit": "git add . && git cz",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.1",
+    "tsx": "^4.19.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "prettier src/**/* --write"
+  }
+}
